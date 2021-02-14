@@ -25,7 +25,22 @@ module.exports = {
         path: `${__dirname}/src/blog`
       }
     },
-    `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-prismjs`,
+            options: {
+              inlineCodeMarker: null,
+              aliases: {},
+              showLineNumbers: false,
+              noInlineHighlight: false,
+            },
+          },
+        ]
+      }
+    },
     `gatsby-plugin-sass`,
   ],
 }
