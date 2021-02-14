@@ -1,4 +1,14 @@
 .blogPosts {
     min-height: calc(100vh - 90px - 20vh);
     padding: 30px;
+    width: 50%;
+    margin: 100px auto;
+
+    h1 {
+        margin-bottom: 20px;
+    }
+
+    article {
+        margin-bottom: 30px;
+    }
 }

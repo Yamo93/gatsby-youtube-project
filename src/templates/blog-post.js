@@ -10,10 +10,10 @@ export default function BlogPost({ data }) {
 
     return (
         <Layout>
-          <img className={styles.featuredImage} src={publicURL} alt="Blog post featured image"/>
           <div className={styles.blogPost}>
             <h1>{title}</h1>
             <small>{date} - {author}</small>
+            <img className={styles.featuredImage} src={publicURL} alt="Blog post featured image"/>
             <div dangerouslySetInnerHTML={{ __html: html }} />
             </div>
         </Layout>
