@@ -1,0 +1,10 @@
+.blogPost {
+    min-height: calc(100vh - 90px - 20vh);
+    padding: 30px;
+}
+
+.featuredImage {
+    width: 100%;
+    height: 40vh;
+    object-fit: cover;
+}

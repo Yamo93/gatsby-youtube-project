@@ -1,0 +1,29 @@
+.navbar {
+    background-color: lightgray;
+    padding: 25px;
+    display: flex;
+    align-items: baseline;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.logoName {
+    flex: 1;
+}
+
+.menuList {
+    flex: 1;
+    display: flex;
+    list-style: none;
+
+    li {
+        margin: 10px;
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+    }
+}
