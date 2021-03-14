@@ -1,5 +1,5 @@
 import React from 'react'
-import { graphql, Link } from 'gatsby'
+import { graphql } from 'gatsby'
 import Layout from '../components/layout'
 import styles from './BlogPost.module.scss'
 
@@ -13,7 +13,7 @@ export default function BlogPost({ data }) {
           <div className={styles.blogPost}>
             <h1>{title}</h1>
             <small>{date} - {author}</small>
-            <img className={styles.featuredImage} src={publicURL} alt="Blog post featured image"/>
+            <img className={styles.featuredImage} src={publicURL} alt={title} />
             <div dangerouslySetInnerHTML={{ __html: html }} />
             </div>
         </Layout>

@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 import styles from "./BlogList.module.scss"
 
 export default function Blog({ data }) {
-  const { posts } = data.blog
+  const posts = data.blog.posts;
   return (
     <Layout>
       <div className={styles.blogPosts}>
